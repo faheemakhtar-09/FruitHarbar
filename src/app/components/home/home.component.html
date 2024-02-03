@@ -6,9 +6,11 @@
                     <div class="slider_item-detail">
                         <h1>{{ item.heading }}</h1>
                         <p class="content-banner">{{item.contents}}</p>
+                        <div class="btn-div">
                         <button onclick="shopNow" class="me-3 brnad-btn">{{btn_label}}</button>
                         <button onclick="shopNow" class="btn-contact brnad-btn">{{btn_label2}}</button>
                     </div>
+                  </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="slider_img-box">
@@ -20,10 +22,8 @@
     </div>
 </section>
 <section class="section">
-
-</section>
 <div class="container">
-  <h4>Fresh Fruits</h4>
+  <h4>Our Services</h4>
   <p class="text-center">
     There are many variations of passages of Lorem Ipsum available, but
     the majority have
@@ -45,3 +45,16 @@
   </div>
   </div>
 </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h4>Fresh Fruits</h4>
+    <p class="text-center">
+      There are many variations of passages of Lorem Ipsum available, but
+      the majority have
+    </p>
+    <app-fruits-lists
+    [contents]="fruitsContents"
+  ></app-fruits-lists>
+  </div>
+</section>

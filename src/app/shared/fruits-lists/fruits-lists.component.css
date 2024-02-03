@@ -1,0 +1,16 @@
+.btn-contact{
+    padding: 10px 0;
+    text-align: center;
+    width: 145px;
+}
+.p-45-0{
+    padding: 45px 0;
+}
+.fruit_img-box{
+    width: 250px;
+    height: 145px;
+}
+.fruit_img-box img{
+    width: auto;
+    height: inherit;
+}

@@ -44,7 +44,7 @@ section{
     padding-top: calc(8% + 89px); 
 }
 .section{
-    padding: 75px 0;
+    padding: 75px 0 0;
 }
 h1{
     font-weight: 700;
@@ -54,4 +54,16 @@ h4{
     font-weight: 600;
     font-size: 32px;
     text-align: center;
+}
+@media screen and (max-width:768px) {
+    h1 {
+        font-weight: 700;
+        font-size: 60px;
+        width: 95%;
+        text-align: center;
+    }
+    .btn-div{
+        display: flex;
+        justify-content: center;
+    }
 }
