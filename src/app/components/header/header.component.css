@@ -1,0 +1,16 @@
+.custom_nav-container {
+    z-index: 99999;
+    padding: 15px 0;
+    background: #f7f7f7;
+}
+.navbar-brand span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e2e2d;
+    margin-top: 5px;
+}
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 10px 30px;
+    color:var(--text-color);
+    text-align: center;
+}

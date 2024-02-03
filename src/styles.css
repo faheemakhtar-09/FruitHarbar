@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+/* css variables */
+:root {
+    --brand-color: #fc5d35;
+    --body-color:#000000;
+    --text-color:#343434;
+    --btn-text-color:#fff;
+}
+body{
+    color: var(--body-color);
+}
+.brnad-btn{
+    color: var(--btn-text-color);
+    border: none;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color:var(--brand-color);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.ml-4{
+    margin-left: 1.5rem;
+}
+section{
+    padding-top: calc(8% + 89px); 
+}

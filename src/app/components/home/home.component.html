@@ -1,0 +1,12 @@
+<section class="hero-section">
+    <carousel>
+        <slide *ngFor="let item of carouselItems">
+          <!-- Your carousel content goes here -->
+          <img [src]="item.image" alt="{{ item.caption }}">
+          <div class="carousel-caption">
+            <h3>{{ item.caption }}</h3>
+          </div>
+        </slide>
+      </carousel>
+      
+</section>

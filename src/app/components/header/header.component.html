@@ -1,0 +1,25 @@
+<nav class="navbar custom_nav-container pt-3 navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <div class="brand-logo">
+      <a class="navbar-brand" href="#">
+        <img src="../../../assets/images/logo.png" alt="">
+        <span>FruitHarbar</span>
+      </a>
+    </div>
+    <div class="justify-content-end collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let item of menuItems">
+          <a class="nav-link" [href]="item.link">{{ item.label }}</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+        <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+          <img src="../../../assets/images/search-icon.png" alt="">
+        </button>
+      </form>
+      <div class="ml-4">
+        <app-buttons [label]="btn_label" (clicked)="onButtonClick()"></app-buttons>
+      </div>
+    </div>
+  </div>
+</nav>
