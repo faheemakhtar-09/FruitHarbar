@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NgForOf } from '@angular/common';
 import { ButtonsComponent } from '../../shared/buttons/buttons.component';
+import { FruitsListsComponent } from '../../shared/fruits-lists/fruits-lists.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgForOf,ButtonsComponent],
+  imports: [NgForOf,ButtonsComponent,FruitsListsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -21,4 +22,22 @@ export class HomeComponent {
     {image:'../../../assets/images/card-item-2.png',serviceHeading:'Grapes',serviceContents:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."},
     {image:'../../../assets/images/card-item-3.png',serviceHeading:'Gauva',serviceContents:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."},
   ]
+
+
+  fruitsHeading = 'List of Fruits';
+  fruitsContents = [
+    { image: '../../../assets/images/orange.png', alt: 'Apple', text:"but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",heading:"Best Fresh Orange"},
+    { image: '../../../assets/images/grapes.png', alt: 'Banana', text: "but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",heading:"Best Fresh Grapes" },
+    { image: '../../../assets/images/gauva.png', alt: 'Gauva', text: "but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be",heading:"Best Fresh Grapes" },
+  ];
+
+  fruitsButton = 'Click me';
+
+  fruitsImage = 'fruits.jpg';
+
+  handleFruitsClick(): void {
+    console.log('Fruits button clicked!');
+    // Add your logic here
+  }
+
 }
