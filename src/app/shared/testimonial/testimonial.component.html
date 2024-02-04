@@ -1,0 +1,24 @@
+<div class="container">
+  <!-- testimonial.component.html -->
+  <h4>{{ heading }}</h4>
+  <p class="text-center">{{ contents }}</p>
+  <div class="wrapper">
+    <owl-carousel-o [options]="customOptions">
+      <ng-container *ngFor="let slide of testimonial_contents">
+        <ng-template carouselSlide [id]="slide.id.toString()" class="slide">
+            <div class="testimonials-container">
+                <div class="client_img-box">
+                    <img
+                      [src]="slide.url"
+                      [alt]="slide.id.toString()"
+                      [title]="slide.id.toString()"
+                    />
+                  </div>
+                  <h4>{{ slide.headings }}</h4>
+                  <p class="text-center">{{ slide.contents }}</p>
+            </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.client_img-box {
+    width: 350px;
+}
+.testimonials-container{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.owl-nav{
+
+}

@@ -67,3 +67,41 @@ h4{
         justify-content: center;
     }
 }
+.wrapper .owl-nav .owl-next::before{
+    content: "";
+    position: absolute;
+    background: url(./assets/images/next.png) !important;
+    height: 14px;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    top: 37%;
+    left: 37%;
+}
+.wrapper .owl-nav .owl-prev::before{
+    content: "";
+    position: absolute;
+    background: url(./assets/images/prev.png) !important;
+    height: 14px;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    top: 37%;
+    left: 37%;
+}
+.wrapper .owl-nav .owl-next,
+    .wrapper .owl-nav .owl-prev{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 100%;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: center;
+    background-color: #292727;
+}
+ .owl-nav [class*=owl-]{
+    font-size: 0 !important;
+}
