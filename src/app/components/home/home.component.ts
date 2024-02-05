@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { NgForOf } from '@angular/common';
 import { ButtonsComponent } from '../../shared/buttons/buttons.component';
 import { FruitsListsComponent } from '../../shared/fruits-lists/fruits-lists.component';
+import { TestimonialComponent } from '../../shared/testimonial/testimonial.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgForOf,ButtonsComponent,FruitsListsComponent],
+  imports: [NgForOf,ButtonsComponent,FruitsListsComponent,TestimonialComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -32,12 +33,14 @@ export class HomeComponent {
   ];
 
   fruitsButton = 'Click me';
-
   fruitsImage = 'fruits.jpg';
-
   handleFruitsClick(): void {
     console.log('Fruits button clicked!');
-    // Add your logic here
   }
-
+  heading="Testimonial"
+  contents="There are many variations of passages of Lorem Ipsum available, but the majority have"
+  caraouselData = [
+    { id: 1, url: '../../../assets/images/client.png',headings:"Johnhex",contents:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure" },
+    { id: 2, url: '../../../assets/images/client.png',headings:"Tony Stark",contents:"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure" },
+  ];
 }
