@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { NgForOf } from '@angular/common';
+
 @Component({
   selector: 'app-testimonial',
   standalone: true,
@@ -16,10 +17,6 @@ export class TestimonialComponent {
   customOptions: OwlOptions = {
     items: 1,
     loop: true,
-    autoplay: false,
-    center: true,
-    dots: false,
-    autoWidth: true,
     nav: true
   };
   ngOnInit() {}
